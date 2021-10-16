@@ -1,0 +1,61 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+using ld = long double; // or double, if TL is tight
+using str = string; // yay python!
+
+using pl = pair<ll,ll>;
+using pd = pair<ld,ld>;
+
+using vb = vector<bool>;
+using vl = vector<ll>;
+using vd = vector<ld>;
+using vs = vector<str>;
+using vpl = vector<pl>;
+using vpd = vector<pd>;
+
+// pairs
+#define mp make_pair
+#define f first
+#define s second
+
+#define sz(x) (ll)((x).size())
+#define bg(x) begin(x)
+#define all(x) bg(x), end(x)
+#define rall(x) x.rbegin(), x.rend()
+#define ins insert
+#define ft front()
+#define bk back()
+#define pb push_back
+#define eb emplace_back
+#define pf push_front
+
+#define lb lower_bound
+#define ub upper_bound
+
+#define F0R(i,a) for(ll i=0;i<a;i++)
+#define FOR(i,a,b) for(ll i=a;i<b;i++)
+
+#define nn << "\n"
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    string s; cin >> s;
+    bool can = 1;
+
+    if (s[0] == s.back()){}
+    else if (s[0] == '*' || s.back()=='*'){}
+    else can = 0;
+    if (s[1] == s[3]){}
+    else if (s[1] == '*' || s[3]=='*'){}
+    else can = 0;
+    if (can) cout <<"YES";
+    else cout << "NO";
+}
